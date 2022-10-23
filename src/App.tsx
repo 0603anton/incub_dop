@@ -19,21 +19,19 @@ function App() {
     }
     const todosList = todos.map((el) => {
         return (
-            <div>
-                <h1>First Heroku Build</h1>
                 <li key={el.id}>
                     <span>{el.id} - </span>
                     <span>{el.title}</span>
                     <span>{el.completed}</span>
                     <span>{el.userId}</span>
                 </li>
-            </div>
         )
     })
 
 
     return (
         <div className="App">
+            <h1>First Heroku Build</h1>
             <button onClick={onClickHandler}>NEW POSTS</button>
             <ul>
                 {todosList}
